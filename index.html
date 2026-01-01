@@ -1,93 +1,118 @@
-𝐅𝐄𝐈𝐓𝐎 𝐏𝐎𝐑 𝐕𝐈𝐍𝐈𝐂𝐈𝐔𝐒 𝐒𝐀𝐍𝐓𝐎𝐒-𝐓𝐄𝐂𝐇
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- 𝐏𝐄𝐑𝐒𝐎𝐍𝐀𝐋 𝐏𝐎𝐑𝐓𝐎𝐅𝐎𝐋𝐈𝐎.𝐕𝟐 -->
-    <link rel="stylesheet" href="./bonitesa.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinicius Santos | Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="inicio" class="inicio"></div>
-    <H1>Bem Vindo ao meu Site</H1>
-    <nav>
-        <a href="#inicio">Home</a>
-        <a href="#contato">Contato</a>
-        <a href="#sobre">Sobre</a>
-    </nav>
-    <h2>Desenvolvendo a infraestrutura digital que move negócios </h2>
-    <p>Backend Developer | Python • Automação • Soluções Reais</p>
 
+  <nav class="navbar">
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#tecnologias">Tecnologias</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
 
-    <div id="sobre" class="conteudo">
-        <h3>Vinicius Santos-Tech</h3>
-        <header>Aos 15 anos, descobri que a programação poderia ser mais do que um hobby - poderia ser uma forma de resolver
-         problemas reais.
-          Desde então, venho usando Python para criar soluções práticas que tornam tarefas repetitivas em processos automatizados.
-         Meu foco está em desenvolver ferramentas que realmente funcionam no dia a dia. Gosto de pegar desafios como "preciso analisar esses dados" ou "essa tarefa toma muito tempo" e transformá-los em código limpo e eficiente.</header>
-        <p>Vamos trabalhar Juntos!</p>
-    </div>
+  <div id="inicio" class="hero">
+    <header>Vinicius Santos</header>
+    <p class="frase-principal">
+      Desenvolvendo <span class="destaque-bloco">soluções</span> 
+      <span class="destaque-bloco">digitais</span> modernas, rápidas 
+      e seguras para alavancar negócios.
+    </p>
+  </div>
 
-    <div class="Tec">
-    <h4>Tecnologias</h4>
-    
-    <header>SELENIUM</header>
-    <header>TKINTER</header>
-    <header>BEAUTIFULSOUP</header>
-    <header>PANDAS</header>
-    <header>STREAMLIT</header>
-    <header>PLOTLY</header>
-    <header>APIs</header>
-
+  <section id="sobre" class="secao-sobre">
+    <h2>Sobre Mim</h2>
+    <div class="conteudo-sobre">
+        <p>Meu nome é Vinícius e sou desenvolvedor focado em soluções de backend. Atualmente, dedico meu tempo ao aperfeiçoamento das minhas habilidades técnicas em programação e ao estudo avançado de inglês no Brasas, o que me permite navegar com facilidade em documentações técnicas internacionais e acompanhar as tecnologias mais recentes do mercado.
+          Trabalho principalmente com <strong>Python</strong>, utilizando a linguagem para estruturar lógicas de negócio eficientes e integrar sistemas com bancos de dados, como o SQLite.</p> 
+        <p>Minha abordagem no desenvolvimento é voltada para a organização e funcionalidade: acredito que um bom sistema é aquele que resolve problemas de forma direta e mantém uma estrutura de código limpa e escalável.
+          Embora o foco seja o backend, tenho experiência em criar interfaces funcionais utilizando Streamlit, entregando projetos que unem o processamento de dados a uma experiência de uso intuitiva.</p>
         
+        <div class="skills">
+            <span>#Python</span> 
+            <span>#SQL</span> 
+            <span>#Selenium</span> 
+            <span>#Back-end</span> 
+            <span>#Pandas</span> 
+            <span>#OpenAI</span>
+        </div>
     </div>
-<div id="contato" class="contato">
-    <h4>Contato</h4>
-    
-    <div class="contato-item">
-        <header>📧 Email</header>
-        <p>Vinobeacoup56@gmail.com</p>
-    </div>
-    
-    <div class="contato-item">
-        <header>📱 WhatsApp</header>
-        <p>(21) 97455-7513</p>
-    </div>
-    
-    <div class="contato-item">
-        <header>💻 GitHub</header>
-        <p><a href="https://github.com/ViniciusSantos-Tech" target="_blank">github.com/ViniciusSantos-Tech</a></p>
-    </div>
-    
-    <div class="contato-item">
-        <header>📍 Localização</header>
-        <p>Rio de Janeiro, Brasil</p>
-    </div>
-</div>
-<script>
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        } else {
-            entry.target.classList.remove('visible');
-        }
-    });
-});
+  </section>
 
-document.querySelectorAll('.Tec header').forEach(el => {
-    observer.observe(el);
-});
-
-document.querySelectorAll('.contato-item').forEach(el => {
-    observer.observe(el);
-});
-</script>
-</body>
-
-
+  <section id="projetos" class="secao-projetos">
+    <h2>PROJETOS</h2>
+    <p class="subtitulo-projetos">Veja meus projetos Destaques</p>
     
+    <div class="grid-projetos">
+        <div class="card-projeto">
+            <h3>Python Bank System</h3>
+            <p>Sistema bancário robusto com Python e SQLite. Possui controle de saldo, transferências via ID e persistência de dados real, focado em lógica de backend pura.</p>
+            <a href="https://github.com/ViniciusSantos-Tech/Python-Bank-System" target="_blank" class="botao-saber-mais">Saber sobre</a>
+        </div>
+
+        <div class="card-projeto">
+            <h3>Amazon Price Scraper</h3>
+            <p>Automação com Selenium para monitoramento de preços. O script coleta dados e gera um arquivo CSV com a média de mercado automaticamente.</p>
+            <a href="https://github.com/ViniciusSantos-Tech/Amazon-Price-Scraper-Streamlit" target="_blank" class="botao-saber-mais">Saber sobre</a>
+        </div>
+
+        <div class="card-projeto">
+            <h3>AI-Powered Summarizer</h3>
+            <p>Ferramenta de IA que utiliza a API da OpenAI (GPT-4o) para ler arquivos CSV e gerar resumos inteligentes de forma automática.</p>
+            <a href="https://github.com/ViniciusSantos-Tech" target="_blank" class="botao-saber-mais">Saber sobre</a>
+        </div>
+    </div>
+  </section>
+
+  <section id="tecnologias" class="secao-tecnologias">
+    <h2>Tecnologias</h2>
+    <div class="grid-tecnologias">
+        <div class="categoria-tech">
+            <h3>Linguagens</h3>
+            <ul><li>Python</li></ul>
+        </div>
+        <div class="categoria-tech">
+            <h3>Frameworks & Web</h3>
+            <ul>
+                <li>Streamlit</li>
+                <li>Selenium</li>
+                <li>BeautifulSoup4 (BS4)</li>
+            </ul>
+        </div>
+        <div class="categoria-tech">
+            <h3>Bancos de Dados</h3>
+            <ul>
+                <li>SQL</li>
+                <li>SQLite</li>
+            </ul>
+        </div>
+        <div class="categoria-tech">
+            <h3>Bibliotecas & IA</h3>
+            <ul>
+                <li>Pandas</li>
+                <li>Plotly</li>
+                <li>OpenAI API</li>
+            </ul>
+        </div>
+    </div>
+  </section>
+
+  <section id="contato" class="secao-contato">
+    <h2>Contato</h2>
+    <div class="botoes-contato">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vinobeacoup56@gmail.com" target="_blank" class="btn-contato">E-mail</a>
+        <a href="https://github.com/ViniciusSantos-Tech" target="_blank" class="btn-contato">GitHub</a>
+        <a href="https://wa.me/5521974557513" target="_blank" class="btn-contato">WhatsApp</a>
+    </div>
+  </section>
+  
 </body>
 </html>
