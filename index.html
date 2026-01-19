@@ -1,26 +1,159 @@
-# Multilingual Professional Portfolio
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinicius Santos | Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
 
-A clean, responsive, and high-performance personal portfolio designed to showcase backend development skills and projects.
+  <nav class="navbar">
+    <ul>
+      <li><a href="#inicio" id="nav-inicio">Início</a></li>
+      <li><a href="#sobre" id="nav-sobre">Sobre</a></li>
+      <li><a href="#projetos" id="nav-projetos">Projetos</a></li>
+      <li><a href="#tecnologias" id="nav-tecnologias">Tecnologias</a></li>
+      <li><a href="#contato" id="nav-contato">Contato</a></li>
+      <li class="idioma-container">
+        <img src="https://flagcdn.com/w40/br.png" onclick="mudarIdioma('pt')" class="flag-img" alt="Brasil">
+        <img src="https://flagcdn.com/w40/us.png" onclick="mudarIdioma('en')" class="flag-img" alt="EUA">
+        <img src="https://flagcdn.com/w40/fr.png" onclick="mudarIdioma('fr')" class="flag-img" alt="França">
+      </li>
+    </ul>
+  </nav>
+  
+  <div id="inicio" class="hero">
+    <header class="nome-video">Vinicius Santos</header>
+    <p class="frase-principal" id="hero-frase">
+        I build <span class="destaque-bloco">python</span> <span class="destaque-bloco">solutions</span> for automation, web scraping, data processing and simple web apps.
+    </p>
+  </div>
 
-## Technologies
-* **HTML5**
-* **CSS3** (Custom Montserrat typography & Sticky layouts)
-* **JavaScript** (Client-side translation engine)
+  <section id="sobre" class="secao-sobre">
+    <h2 id="titulo-sobre">Sobre Mim</h2>
+    <div class="conteudo-sobre">
+        <img src="FotoProfissional.png" alt="Vinícius Santos" class="foto-perfil">
+        
+        <div class="texto-sobre">
+            <p id="sobre-p1">Meu nome é Vinícius e sou desenvolvedor focado em soluções de backend. Atualmente, dedico meu tempo ao aperfeiçoamento das minhas habilidades técnicas em programação e ao estudo avançado de inglês no Brasas, o que me permite navegar com facilidade em documentações técnicas internacionais e acompanhar as tecnologias mais recentes do mercado. Trabalho principalmente com <strong>Python</strong>, utilizando a linguagem para estruturar lógicas de negócio eficientes e integrar sistemas com bancos de dados.</p> 
+            <p id="sobre-p2">Minha abordagem no desenvolvimento é voltada para a organização e funcionalidade: acredito que um bom sistema é aquele que resolve problemas de forma direta e mantém uma estrutura de código limpa e escalável. Embora o foco seja o backend, tenho experiência em criar interfaces funcionais utilizando Streamlit, entregando projetos que unem o processamento de dados a uma experiência de uso intuitiva.</p>
+            
+            <div class="skills">
+                <span>#Python</span> <span>#SQL</span> <span>#Selenium</span> <span>#Back-end</span> <span>#Pandas</span> <span>#OpenAI</span>
+            </div>
+        </div>
+    </div>
+  </section>
 
-##  Key Features
-* **Real-time Translation:** Built-in system supporting Portuguese, English, and French without page reloads.
-* **Modern UI:** Features a sticky profile navigation, responsive project grids, and a dark-themed professional aesthetic.
-* **Dynamic Sections:** Dedicated areas for professional summary, technical skills, highlighted projects, and contact channels.
-* **Responsive Design:** Fully optimized for mobile devices and desktops.
+  <section id="projetos" class="secao-projetos">
+    <h2 id="titulo-projetos">PROJETOS</h2>
+    <p class="subtitulo-projetos" id="sub-projetos">Veja meus projetos Destaques</p>
+    
+    <div class="grid-projetos">
+        <div class="card-projeto">
+            <h3 id="p1-t">Python Bank System</h3>
+            <p id="p1-d">Engine bancário profissional focado em segurança de nível enterprise. Utiliza SQLAlchemy ORM para persistência, autenticação stateless via Bearer Tokens e travas lógicas de identidade para proteção de transações e histórico.</p>
+            <a href="https://github.com/ViniciusSantos-Tech/Python-Bank-System" target="_blank" class="botao-saber-mais" id="btn-p1">Saber sobre</a>
+        </div>
 
-## 🛠 Setup
-1. Clone the repository.
-2. Open `index.html` in any modern web browser.
-3. Ensure `style.css` and `FotoProfissional.png` are in the same directory.
+        <div class="card-projeto">
+            <h3 id="p2-t">Amazon Price Scraper</h3>
+            <p id="p2-d">Automação com Selenium para monitoramento de preços. O script coleta dados e gera um arquivo CSV com a média de mercado automaticamente.</p>
+            <a href="https://github.com/ViniciusSantos-Tech/Amazon-Price-Scraper-Streamlit" target="_blank" class="botao-saber-mais" id="btn-p2">Saber sobre</a>
+        </div>
 
-## 📂 Project Structure
-* `index.html` - Contains the structure, content data, and translation logic.
-* `style.css` - Handles all visual styling, layout grids, and responsiveness.
+        <div class="card-projeto">
+            <h3 id="p3-t">AI-Powered Summarizer</h3>
+            <p id="p3-d">Ferramenta de IA que utiliza a API da OpenAI (GPT-4o) para ler arquivos CSV e gerar resumos inteligentes de forma automática.</p>
+            <a href="https://github.com/ViniciusSantos-Tech" target="_blank" class="botao-saber-mais" id="btn-p3">Saber sobre</a>
+        </div>
+    </div>
+  </section>
 
----
-*Developed by Vinícius Santos*
+  <section id="tecnologias" class="secao-tecnologias">
+    <h2 id="titulo-tech">Tecnologias</h2>
+    <div class="grid-tecnologias">
+        <div class="categoria-tech">
+            <h3 id="t1">Linguagens</h3>
+            <ul><li>Python</li></ul>
+        </div>
+        <div class="categoria-tech">
+            <h3 id="t2">Frameworks & Web</h3>
+            <ul><li>Streamlit</li><li>Selenium</li><li>BeautifulSoup4 (BS4)</li><li>SQLAlchemy (ORM)</li></ul>
+        </div>
+        <div class="categoria-tech">
+            <h3 id="t3">Bancos de Dados</h3>
+            <ul><li>SQL</li><li>SQLite</li><li>PostgreSQL</li></ul>
+        </div>
+        <div class="categoria-tech">
+            <h3 id="t4">Bibliotecas & IA</h3>
+            <ul><li>Pandas</li><li>Plotly</li><li>OpenAI API</li></ul>
+        </div>
+    </div>
+  </section>
+
+  <section id="contato" class="secao-contato">
+    <h2 id="titulo-contato">Contato</h2>
+    <div class="botoes-contato">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vinobeacoup56@gmail.com" target="_blank" class="btn-contato">E-mail</a>
+        <a href="https://github.com/ViniciusSantos-Tech" target="_blank" class="btn-contato">GitHub</a>
+        <a href="https://wa.me/5521974557513" target="_blank" class="btn-contato">WhatsApp</a>
+    </div>
+  </section>
+
+  <script>
+    const traducoes = {
+      pt: {
+        "nav-inicio": "Início", "nav-sobre": "Sobre", "nav-projetos": "Projets", "nav-tecnologias": "Tecnologias", "nav-contato": "Contato",
+        "hero-frase": 'Eu crio <span class="destaque-bloco">soluções</span> <span class="destaque-bloco">python</span> para automação, web scraping, dados e apps web simples.',
+        "titulo-sobre": "Sobre Mim",
+        "sobre-p1": "Meu nome é Vinícius e sou desenvolvedor focado em soluções de backend. Atualmente, dedico meu tempo ao aperfeiçoamento das minhas habilidades técnicas em programação e ao estudo avançado de inglês no Brasas, o que me permite navegar com facilidade em documentações técnicas internacionais e acompanhar as tecnologias mais recentes do mercado. Trabalho principalmente com <strong>Python</strong>, utilizando a linguagem para estruturar lógicas de negócio eficientes e integrar sistemas com bancos de dados, como o SQLite.",
+        "sobre-p2": "Minha abordagem no desenvolvimento é voltada para a organização e funcionalidade: acredito que um bom sistema é aquele que resolve problemas de forma direta e mantém uma estrutura de código limpa e escalável. Embora o foco seja o backend, tenho experiência em criar interfaces funcionais utilizando Streamlit, entregando projetos que unem o processamento de dados a uma experiência de uso intuitiva.",
+        "titulo-projetos": "PROJETOS", "sub-projetos": "Veja meus projetos Destaques",
+        "p1-t": "Python Bank System", "p1-d": "Engine bancário profissional focado em segurança de nível enterprise. Utiliza SQLAlchemy ORM para persistência, autenticação stateless via Bearer Tokens e travas lógicas de identidade para proteção de transações e histórico.", "btn-p1": "Saber sobre",
+        "p2-t": "Amazon Price Scraper", "p2-d": "Automação com Selenium para monitoramento de preços. O script coleta dados e gera um arquivo CSV com a média de mercado automaticamente.", "btn-p2": "Saber sobre",
+        "p3-t": "AI-Powered Summarizer", "p3-d": "Ferramenta de IA que utiliza a API da OpenAI (GPT-4o) para ler arquivos CSV e gerar resumos inteligentes de forma automática.", "btn-p3": "Saber sobre",
+        "titulo-tech": "Tecnologias", "t1": "Linguagens", "t2": "Frameworks & Web", "t3": "Bancos de Dados", "t4": "Bibliotecas & IA",
+        "titulo-contato": "Contato"
+      },
+      en: {
+        "nav-inicio": "Home", "nav-sobre": "About", "nav-projetos": "Projects", "nav-tecnologias": "Tech", "nav-contato": "Contact",
+        "hero-frase": 'I build <span class="destaque-bloco">python</span> <span class="destaque-bloco">solutions</span> for automation, web scraping, data processing and simple web apps.',
+        "titulo-sobre": "About Me",
+        "sobre-p1": "My name is Vinícius and I am a developer focused on backend solutions. Currently, I am perfecting my technical programming skills and studying advanced English at Brasas, which allows me to easily navigate international technical documentation. I mainly work with <strong>Python</strong>, using the language to build efficient business logic and integrate systems with Databases.",
+        "sobre-p2": "My approach to development is focused on organization and functionality: I believe a good system solves problems directly and maintains a clean, scalable code structure. Although my focus is backend, I have experience creating functional interfaces using Streamlit, delivering intuitive data experiences.",
+        "titulo-projetos": "PROJECTS", "sub-projetos": "Check out my featured projects",
+        "p1-t": "Python Bank System", "p1-d": "Professional-grade banking engine focused on enterprise-level security. Features SQLAlchemy ORM for data persistence, stateless authentication via Bearer Tokens, and identity-locking logic to safeguard transactions and financial history.", "btn-p1": "Learn more",
+        "p2-t": "Amazon Price Scraper", "p2-d": "Web automation with Selenium for price monitoring. The script collects data and generates CSV files with market averages automatically.", "btn-p2": "Learn more",
+        "p3-t": "AI-Powered Summarizer", "p3-d": "AI tool using OpenAI API (GPT-4o) to read CSV files and generate smart summaries automatically.", "btn-p3": "Learn more",
+        "titulo-tech": "Technologies", "t1": "Languages", "t2": "Frameworks & Web", "t3": "Databases", "t4": "Libraries & IA",
+        "titulo-contato": "Contact"
+      },
+      fr: {
+        "nav-inicio": "Accueil", "nav-sobre": "À propos", "nav-projetos": "Projets", "nav-tecnologias": "Tech", "nav-contato": "Contact",
+        "hero-frase": 'Je crée des <span class="destaque-bloco">solutions</span> <span class="destaque-bloco">python</span> pour l\'automatisation, le web scraping e les données.',
+        "titulo-sobre": "À Propos",
+        "sobre-p1": "Je m'appelle Vinícius et je suis un développeur spécialisé dans les solutions backend. Actuellement, je perfectionne mes compétences techniques et j'étudie l'anglais avancé au Brasas. Je travaille principalement avec <strong>Python</strong> pour structurer des logiques métier efficaces et intégrer des bases de données.",
+        "sobre-p2": "Mon approche du développement est axée sur l'organisation et la fonctionnalité : je crois qu'un bon système résout les problèmes directement et maintient une structure de code propre. Bien que mon expertise soit le backend, j'ai de l'expérience avec Streamlit.",
+        "titulo-projetos": "PROJETS", "sub-projetos": "Découvrez mes projets phares",
+        "p1-t": "Python Bank System", "p1-d": "Moteur bancaire professionnel axé sur la sécurité de niveau entreprise. Utilise SQLAlchemy ORM para la persistance, l'authentification stateless via Bearer Tokens et des verrous logiques d'identité pour la protection des transactions et de l'historique.", "btn-p1": "En savoir plus",
+        "p2-t": "Amazon Price Scraper", "p2-d": "Automatisation avec Selenium pour le suivi des prix. Le script génère automatiquement des fichiers CSV.", "btn-p2": "En savoir plus",
+        "p3-t": "AI-Powered Summarizer", "p3-d": "Outil d'IA utilisant l'API OpenAI (GPT-4o) para générer des résumés intelligents à partir de fichiers CSV.", "btn-p3": "En savoir plus",
+        "titulo-tech": "Technologies", "t1": "Langages", "t2": "Frameworks & Web", "t3": "Bases de données", "t4": "Bibliothèques & IA",
+        "titulo-contato": "Contact"
+      }
+    };
+
+    function mudarIdioma(idioma) {
+      for (let id in traducoes[idioma]) {
+        const el = document.getElementById(id);
+        if (el) {
+            el.innerHTML = traducoes[idioma][id];
+        }
+      }
+    }
+  </script>
+</body>
+</html>
