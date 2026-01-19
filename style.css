@@ -99,6 +99,27 @@ h2 {
     text-transform: uppercase;
 }
 
+.conteudo-sobre {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.foto-perfil {
+    width: 320px;
+    height: auto;
+    border: 5px solid #000000;
+    outline: 3px solid #ffffff;
+    border-radius: 8px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 120px;
+}
+
+.texto-sobre {
+    flex: 1;
+}
+
 .secao-sobre p {
     font-size: 1.5rem;
     font-weight: 700;
@@ -216,4 +237,28 @@ h2 {
 .btn-contato:hover {
     background-color: white;
     color: black;
+}
+
+@media (max-width: 768px) {
+    .conteudo-sobre {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .foto-perfil {
+        position: static;
+        width: 100%;
+        max-width: 280px;
+        margin-bottom: 10px;
+    }
+
+    .texto-sobre {
+        width: 100%;
+    }
+
+    .skills {
+        justify-content: center;
+    }
 }
